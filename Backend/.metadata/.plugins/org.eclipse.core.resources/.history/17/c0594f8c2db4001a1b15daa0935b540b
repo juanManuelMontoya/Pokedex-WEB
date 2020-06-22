@@ -1,0 +1,15 @@
+package com.example.demo;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.GetMapping;
+
+public interface ApiService {
+	
+	@GetMapping("/pokemons")
+	public List<Object> getPokemons();
+	
+	@GetMapping("/regions")
+	public List<Object> getRegions();
+	
+}

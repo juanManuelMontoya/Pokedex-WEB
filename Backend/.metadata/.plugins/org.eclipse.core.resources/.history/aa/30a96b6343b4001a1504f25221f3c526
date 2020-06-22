@@ -1,0 +1,52 @@
+package com.example.demo;
+
+import java.util.*;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpMethod;
+import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
+
+@RestController
+public class ApiController {
+
+
+	@Autowired
+	private RestTemplate restTemplate;
+	
+	private static String url = "https://pokeapi.co/api/v2/pokemon/{id}";
+	private static String urlRegion = "https://pokeapi.co/api/v2/region";
+
+	
+	 @RequestMapping(value = "/pokemon/{id}")
+	   public String getPokemonList(String id) {
+		  Map<String, String> params = new HashMap<String, String>();
+		    params.put("id", id);
+		 
+		  HttpHeaders headers = new HttpHeaders();
+	      headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
+	      headers.add("user-agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36");
+	      HttpEntity <String> entity = new HttpEntity<String>(headers);
+	      
+	      System.out.println(url + "/" + id);
+	      
+	      return restTemplate.exchange(url, HttpMethod.GET, entity, String.class, params).getBody();
+	      
+	   }
+	 
+	 @RequestMapping(value = "/region")
+	   public String getRegionList() {
+		  HttpHeaders headers = new HttpHeaders();
+	      headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
+	      headers.add("user-agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36");
+	      HttpEntity <String> entity = new HttpEntity<String>(headers);
+	      
+	      return restTemplate.exchange(urlRegion, HttpMethod.GET, entity, String.class).getBody();
+	
+	      
+	   }
+}

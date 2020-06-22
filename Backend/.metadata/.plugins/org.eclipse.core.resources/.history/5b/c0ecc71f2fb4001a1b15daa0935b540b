@@ -1,0 +1,47 @@
+package com.example.demo;
+
+import java.util.*;
+
+import org.springframework.cloud.openfeign.EnableFeignClients;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@EnableFeignClients(basePackageClasses = ApiServiceProxy.class)
+public class ApiController implements ApiService{
+
+	private ApiServiceProxy proxy;
+	
+	public ApiController(ApiServiceProxy proxy) {
+		// TODO Auto-generated constructor stub
+		this.proxy = proxy;
+	}
+	
+	@Override
+	@GetMapping("/api/v2/pokemon")
+	public List<Object> getPokemons() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	@GetMapping("/api/v2/region/")
+	public List<Object> getRegions() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	/*@Autowired
+	private RestTemplate restTemplate;
+	
+	private static String url = "https://pokeapi.co/docs/v2/pokemon";
+	
+	@GetMapping("/pokemons")
+	public List<Object> getPokemons(){
+		
+		Object[] pokemons = restTemplate.getForObject(url, Object[].class);
+		
+		return Arrays.asList(pokemons);
+	}*/
+}

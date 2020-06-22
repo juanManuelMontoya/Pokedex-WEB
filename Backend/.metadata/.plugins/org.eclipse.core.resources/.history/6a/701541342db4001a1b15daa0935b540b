@@ -1,0 +1,11 @@
+package com.example.demo;
+
+import java.util.List;
+
+public interface ApiService {
+
+	public List<Object> getPokemons();
+	
+	public List<Object> getRegions();
+	
+}
