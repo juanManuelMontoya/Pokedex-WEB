@@ -1,0 +1,12 @@
+https://pokeapi.co/api/v2/pokemon{id} Data de un pokemon
+
+https://pokeapi.co/api/v2/pokemon?offset=0limit=20 limite de data;
+"https://pokeapi.co/api/v2/pokemon?offset=20&limit=20" next;
+
+"https://pokeapi.co/api/v2/pokemon?offset=0&limit=20" previous;
+
+https://pokeapi.co/api/v2/region/ regiones de pokemon;
+
+
+sudo lshw : Descripcion del hardware del pc
+
