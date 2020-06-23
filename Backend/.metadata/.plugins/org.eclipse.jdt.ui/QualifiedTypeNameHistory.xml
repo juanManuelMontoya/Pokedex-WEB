@@ -1,9 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.springframework.http.MediaType"/>
 <fullyQualifiedTypeName name="org.springframework.http.HttpEntity"/>
-<fullyQualifiedTypeName name="org.springframework.http.HttpMethod"/>
 <fullyQualifiedTypeName name="java.lang.Object"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.CrossOrigin"/>
+<fullyQualifiedTypeName name="org.springframework.test.context.junit.jupiter.SpringJUnitConfig"/>
+<fullyQualifiedTypeName name="javax.annotation.security.RunAs"/>
+<fullyQualifiedTypeName name="com.example.demo.ApiController"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="org.springframework.web.client.RestTemplate"/>
+<fullyQualifiedTypeName name="org.aspectj.lang.annotation.Before"/>
+<fullyQualifiedTypeName name="org.junit.Before"/>
+<fullyQualifiedTypeName name="org.springframework.test.web.client.MockRestServiceServer"/>
+<fullyQualifiedTypeName name="org.junit.Test"/>
+<fullyQualifiedTypeName name="org.springframework.web.util.UriTemplateHandler"/>
+<fullyQualifiedTypeName name="org.springframework.web.util.DefaultUriTemplateHandler"/>
+<fullyQualifiedTypeName name="org.springframework.http.HttpMethod"/>
+<fullyQualifiedTypeName name="org.springframework.http.HttpHeaders"/>
+<fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
+<fullyQualifiedTypeName name="org.springframework.http.MediaType"/>
+<fullyQualifiedTypeName name="org.junit.runner.RunWith"/>
+<fullyQualifiedTypeName name="org.junit.runners.JUnit4"/>
+<fullyQualifiedTypeName name="org.springframework.test.context.junit4.SpringJUnit4ClassRunner"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
 </qualifiedTypeNameHistroy>

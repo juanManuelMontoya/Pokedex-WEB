@@ -6440,3 +6440,15 @@ java.lang.InterruptedException
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 18:40:57.769
 !MESSAGE executing callback sts4.classpath.KXGxwvdt SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 18:48:14.480
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.KXGxwvdt
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 18:48:14.866
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.KXGxwvdt
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 18:48:14.867
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-22 18:48:14.867
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.KXGxwvdt => OK
