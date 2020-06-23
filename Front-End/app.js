@@ -20,8 +20,8 @@ const serverOf = document.querySelector('.server-off');
 // Constants and Variables
 let init= 1;
 let limit = 20
-let urlRegion = "http://localhost:9000/region/"; //"https://pokeapi.co/api/v2/region/";
-let urlPokemon = "http://localhost:9000/pokemon/"; //"https://pokeapi.co/api/v2/pokemon/";
+let urlRegion = "https://pokespring-app.herokuapp.com/region/"; //"https://pokeapi.co/api/v2/region/";
+let urlPokemon = "https://pokespring-app.herokuapp.com/pokemon/"; //"https://pokeapi.co/api/v2/pokemon/";
 const TYPES = [
     'normal', 'fighting', 'flying', 'poison', 'ground',
     'rock', 'bug', 'ghost', 'steel', 'fire', 'water',

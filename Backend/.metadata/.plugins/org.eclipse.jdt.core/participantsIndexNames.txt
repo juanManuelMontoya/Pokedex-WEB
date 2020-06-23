@@ -1,3 +1,0 @@
-INDEX VERSION 1.131
-/home/rawsbade/Documentos/Programacion/PokeApi/Backend/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1550341753.index
-/Pokeapi-client/target/generated-sources/annotations
